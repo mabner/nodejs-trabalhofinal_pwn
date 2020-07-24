@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- -->
+<!-- -->
+<head>
+<!-- -->
+  <title>Lista TO-DO</title>
+<!-- -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- -->
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+<!-- W3Schools Style -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- -->
+  <!-- Favicons -->
+  <link href="../assets/img/lrsl.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  * Autor: Luciano Lima
+  ======================================================== -->
+<!-- -->
+</head>
+<!-- -->
+<!-- -->
+<body>
+<!-- -->
+<script>
+//
+// Instalar siderbar-js: npm install sidebar-js --save
+//
+//   var rightSidebarjs = new SidebarJS('navbar', {
+//       documentMinSwipeX: 10,
+//       documentSwipeRange: 40,
+//       nativeSwipe: true,
+//       nativeSwipeOpen: true,
+//       position: 'left',
+//    });
+//
+// Funções que abrem e fecha o Menu.
+//
+    function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+       document.getElementById("main").style.marginLeft = "250px";
+    }
+//
+    function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+    }
+//
+</script>
+<!-- -->
+<!-- -->
+<div id="main">
+   <!-- -->
+   <!-- -->
+   <div id="Cabecalho" class="w3-container w3-teal" >
+        <center>
+            <!-- 
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+            -->
+            <h1>  Controle de Lista To-Do - <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> </h1>
+            <p>   Bem-vindo ao Sistema de Listas de Tarefas. </p>
+        </center>
+   </div>
+</div>
+<!-- -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Sobre</a>
+  <a href="#">Listas</a>
+  <a href="#">Tarefas</a>
+  <a href="#">Comentários</a>
+  <a href="#contact">Contatos</a>
+</div>
+<!-- -->
+<!-- Page Content -->
+<!-- -->
+<div style="margin-left:30%">
+<!--
+<div id="Cabecalho" class="w3-container w3-teal">
+   <center>
+   <h1>  Loja do Luciano Lima </h1>
+   <p>   Bem-vindo a Loja. Segue a Lista dos nossos Produtos  </p>
+   </center>
+</div>
+-->
+<div class="w3-container">
+<!-- -->
+    <ul>
+        {{#each listas}}
+            <li>
+                <p><b>Usuário</b>: {{this.e_mail}}</p>
+                <p><b>Data</b>: {{this.dt_lista}}</p> 
+                <p><b>Lista {{this.id_lista}}</b>: {{this.ds_lista}}</p>
+                <p><b>Inativo</b>: {{this.st_inativo}}</p>
+            </li>
+        {{/each}}
+        <!-- -->
+    </ul>
+<!-- -->
+</div>
+<!-- Fim Page Content -->
+</div>
+<!-- -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contato</h2>
+          <p>Use os canais abaixo para entrar em contato.</p>
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <!-- -->
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Endereço:</h4>
+                <p>Rua Quintiliano Silva, 37/802, BH/MG, 30350-040</p>
+              </div>
+              <!-- -->
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>E-mail: </h4>
+                <p><a href="mailto:luciano.limanokia@outlook.com.br">luciano.limanokia@outlook.com.br</a></p>
+              </div>
+              <!-- -->
+              <div class="phone">
+                <i class="icofont-brand-whatsapp"></i>
+                <h4>Celular:</h4>
+                <p>+55 31 99114-4226</p>
+              </div>
+              <!-- -->
+              <div class="Mapa-Bing">
+                <i class="icofont-brand-microsoft"></i>
+                <h4>Bing Mapas:</h4>
+                <p>
+                  <a href="https://www.bing.com/maps?osid=763d89e0-2133-4069-a985-4bf37ddb442b&cp=-19.93892~-43.945077&lvl=18&v=2&sV=2&form=S00027" target="_blank">Click Aqui (Rua Conselheiro Quintiliano Silva).</a>
+                </p>
+              </div>
+              <!-- -->
+              <div class="Mapa-Google">
+                <i class="icofont-brand-google"></i>
+                <h4>Google Mapas:</h4>
+                <p>
+                  <a href="https://www.google.com.br/maps/place/Condom%C3%ADnio+do+Edif%C3%ADcio+Sevilla+-+Rua+Quintiliano+Silva,+37+-+Santo+Ant%C3%B4nio,+Belo+Horizonte+-+MG,+30110-047/@-19.9389659,-43.9473335,17z/data=!3m1!4b1!4m5!3m4!1s0xa6977d09447927:0x35ed0a4b02a61a91!8m2!3d-19.938971!4d-43.9451448" target="_blank">Click Aqui (Rua Conselheiro Quintiliano Silva).</a>
+                </p>
+              </div>
+              <!-- -->
+          </div>
+          <!-- -->
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <center>
+            <table id="Adeus">
+                <tr>
+                  <th>
+                    Fiquem com o belo Pôr do Sol da Praia do Jacaré (João Pessoa-PB)
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <br>
+                    <br>
+                    <img width="650" src = "../assets/img/praiaJacare.png" alt = "Pôr do Sol - Praia do Jacaré">
+                  </td>
+                </tr>
+             </table>
+            </center> 
+          </div>
+          <!-- -->
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+<!-- -->
+</body>
+</html>

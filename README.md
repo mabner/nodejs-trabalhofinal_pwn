@@ -38,7 +38,3 @@ Jéssica Mello
 Luciano Lima
 
 Marcos Leite
-
-#### Link
-
-https://trabalho-final-pwn.netlify.app/

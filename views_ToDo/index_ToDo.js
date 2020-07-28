@@ -64,8 +64,8 @@ app.get("/", function(req, res) {
     res.render("index", { task: task, complete: complete });
 });
 //
-//Seta APP para escutar a Porta 3000.
+//Seta APP para escutar a Porta 5000.
 //
-app.listen(3000, function() {
-    console.log("Servidor Node.JS executando em Port 3000.");
+app.listen(5000, function() {
+    console.log("Servidor Node.JS executando em Port 5000.");
 });

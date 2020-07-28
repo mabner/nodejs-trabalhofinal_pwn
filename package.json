@@ -1,9 +1,15 @@
 {
-  "name": "nodejs-knex",
-  "version": "0.0.0",
+  "name": "trabalho-final",
+  "version": "1.0.3",
+  "description": "Trabalho final de PWN",
   "private": true,
+  "main": "app.js",
+  "engines": {
+    "node": "12.18.3"
+  },
   "scripts": {
-    "start": "./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "start": "node ./bin/www",
+    "nodemon": "./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 ./bin/www",
     "knex": "./node_modules/.bin/knex"
   },
   "dependencies": {

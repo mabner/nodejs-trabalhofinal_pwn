@@ -15,7 +15,7 @@ router.get('/', GarantirAcessoAutenticado, function(req, res, next) {
       DadosUser = DadosUser.concat(' - ');
       DadosUser = DadosUser.concat(UsrNome);
 //
-      res.render('Admin', { title: 'Portal Lista ToDo', user: NomeUser, usrname: UsrNome});
+      res.render('admin', { title: 'Portal Lista ToDo', user: NomeUser, usrname: UsrNome});
 
 });
 //

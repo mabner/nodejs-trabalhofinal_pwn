@@ -1,0 +1,13 @@
+<h1> Aplicativo Listas ToDo</h1>
+<p>Veja os Comentários do Aplicativo Lista ToDo:</p>
+
+<ul>
+    <h3> Comentários: </h3>
+    {{#each commentaries}}
+        <li>
+            <p><b>Autor</b>: {{this.author}} - <b>Data</b>: {{this.datecomm}}</p>
+            <p><b>Comentário</b>: {{this.comment}}</p>
+            <br>
+        </li>
+    {{/each}}
+</ul>

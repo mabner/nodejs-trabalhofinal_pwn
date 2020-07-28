@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>Lista TO-DO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<!-- -->
+<script>
+//
+// Instalar siderbar-js: npm install sidebar-js --save
+//
+//   var rightSidebarjs = new SidebarJS('navbar', {
+//       documentMinSwipeX: 10,
+//       documentSwipeRange: 40,
+//       nativeSwipe: true,
+//       nativeSwipeOpen: true,
+//       position: 'left',
+//    });
+//
+// Funções que abrem e fecha o Menu.
+//
+    function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+       document.getElementById("main").style.marginLeft = "250px";
+    }
+//
+    function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+    }
+//
+</script>
+<!-- -->
+<!-- Sidebar -->
+<!-- 
+<div class="w3-sidebar w3-light-blue w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+-->
+<!-- -->
+<div id="main">
+   <!-- -->
+   <!-- -->
+   <div id="Cabecalho" class="w3-container w3-teal">
+        <center>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+            <h1>  Controle de Lista To-Do </h1>
+            <p>   Bem-vindo ao Sistema de Lista de Tarefas. </p>
+        </center>
+   </div>
+</div>
+<!-- -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Sobre</a>
+  <a href="#">Listas</a>
+  <a href="#">Tarefas</a>
+  <a href="#">Comentários</a>
+  <a href="#">Contatos</a>
+</div>
+<!-- -->
+<!-- Page Content -->
+<!-- -->
+<div style="margin-left:30%">
+<!--
+<div id="Cabecalho" class="w3-container w3-teal">
+   <center>
+   <h1>  Loja do Luciano Lima </h1>
+   <p>   Bem-vindo a Loja. Segue a Lista dos nossos Produtos  </p>
+   </center>
+</div>
+-->
+<div class="w3-container">
+<!-- -->
+    <ul>
+        {{#each listas}}
+            <li>
+                <p><b>Usuário</b>: {{this.e_mail}}</p>
+                <p><b>Data</b>: {{this.dt_lista}}</p> 
+                <p><b>Lista {{this.id_lista}}</b>: {{this.ds_lista}}</p>
+                <p><b>Inativo</b>: {{this.st_inativo}}</p>
+            </li>
+        {{/each}}
+        <!-- -->
+    </ul>
+<!-- -->
+</div>
+<!-- Fim Page Content -->
+</div>
+<!-- -->
+</body>
+</html>

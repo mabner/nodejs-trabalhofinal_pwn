@@ -10,22 +10,22 @@ const path = require("path");
 //
 
 //
-const indexRouter = require("../routes/index");
+const indexRouter = require("./routes/index");
 //
-const CommentsRouter = require("../routes/Comments");
-const ListaToDoRouter = require("../routes/ListatodoComment");
+const CommentsRouter = require("./routes/Comments");
+const ListaToDoRouter = require("./routes/ListatodoComment");
 //
-const loginRouter = require("../routes/login");
-const logoutRouter = require("../routes/logout");
-const IndexListRouter = require("../routes/index_Listas");
+const loginRouter = require("./routes/login");
+const logoutRouter = require("./routes/logout");
+const IndexListRouter = require("./routes/index_Listas");
 //
 // Rota de Retorno Login Sucesso.
 //
-const adminRouter = require("../routes/admin");
+const adminRouter = require("./routes/admin");
 
 //
 const app = express();
-require("../configs/github.strategy");
+require("./configs/github.strategy");
 //
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

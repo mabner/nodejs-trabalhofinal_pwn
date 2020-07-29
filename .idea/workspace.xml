@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c7606cf-d803-4608-bbd0-ecd72af70b80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nodejs-trabalhofinal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/typed.js/typed.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/typed.js/typed.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1fLKycvXo2ccklxmEjwvDj5ZzXS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c7606cf-d803-4608-bbd0-ecd72af70b80" name="Default Changelist" comment="" />
+      <created>1595992193200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595992193200</updated>
+      <workItem from="1595992194913" duration="803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="984" y="373" key="#Scopes" timestamp="1595992856529">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="984" y="373" key="#Scopes/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992856529" />
+    <state x="647" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595992606158">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="647" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992606158" />
+    <state x="939" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595992376172">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="939" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992376172" />
+    <state width="1362" height="265" key="GridCell.Tab.0.bottom" timestamp="1595992999043">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1362" height="265" key="GridCell.Tab.0.bottom/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992999043" />
+    <state width="1362" height="265" key="GridCell.Tab.0.center" timestamp="1595992999043">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1362" height="265" key="GridCell.Tab.0.center/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992999043" />
+    <state width="1362" height="265" key="GridCell.Tab.0.left" timestamp="1595992999043">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1362" height="265" key="GridCell.Tab.0.left/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992999043" />
+    <state width="1362" height="265" key="GridCell.Tab.0.right" timestamp="1595992999043">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1362" height="265" key="GridCell.Tab.0.right/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992999043" />
+    <state x="1049" y="415" key="WebDeployment.AddServerDialog.v.1" timestamp="1595992622924">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1049" y="415" key="WebDeployment.AddServerDialog.v.1/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1595992622924" />
+  </component>
+</project>

@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Comment  = require('../store/Comment');
+const Comment = require('../store/Comment');
 /*
 Rota GET.
 */
 router.get('/CommList', async (req, res, next) => {
-    res.render ('listaToDo', {
-       commentaries: await Comment.find({})
+    res.render('listaToDo', {
+        commentaries: await Comment.find({})
     });
 });
 /*
@@ -17,11 +17,11 @@ router.post('/CommList', async (req, res, next) => {
         author: req.query.Autor,
         comment: req.query.Comment,
         datecomm: req.query.datecomm,
-		emailAut: req.query.emailAut
+        emailAut: req.query.emailAut
     });
-    res.render ('listaToDo', {
-       commentaries: await Comment.find({})
-     });    
+    res.render('listaToDo', {
+        commentaries: await Comment.find({})
+    });
 });
 /*
 */

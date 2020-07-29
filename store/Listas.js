@@ -6,19 +6,19 @@ const TABLE_NAME = 'listas';
 
 module.exports = {
     getL(user) {
-       return dbL(TABLE_NAME).select('*').where('e_mail', user);
+        return dbL(TABLE_NAME).select('*').where('e_mail', user);
     },
     getLA(user, lista_st) {
         return dbL(TABLE_NAME).select('*').where('st_inativo', lista_st).andWhere('e_mail', user);
     },
-     getLbyID(lista_id) {
+    getLbyID(lista_id) {
         return dbL(TABLE_NAME).select('*')
-        .where('id_lista', lista_id);
-    },    
+            .where('id_lista', lista_id);
+    },
     getLbyNM(lista_ds) {
         return dbL(TABLE_NAME).select('*')
-        .where('ds_lista', 'like', '%' + lista_ds + '%');
-    },    
+            .where('ds_lista', 'like', '%' + lista_ds + '%');
+    },
     insertL(lista) {
         return dbL(TABLE_NAME).insert(lista);
     },

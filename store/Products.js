@@ -10,20 +10,20 @@ module.exports = {
     },
     getbyID(product_id) {
         return db(TABLE_NAME).select('*')
-        .where('id', product_id);
-    },    
+            .where('id', product_id);
+    },
     getbyNM(product_nm) {
         return db(TABLE_NAME).select('*')
-        .where('name', 'like', '%' + product_nm + '%');
-    },    
+            .where('name', 'like', '%' + product_nm + '%');
+    },
     getbyPR(product_preco) {
         return db(TABLE_NAME).select('*')
-        .where('price', '<=', product_preco);
-    },    
+            .where('price', '<=', product_preco);
+    },
     getbyPRI(product_precoI, product_precoF) {
         return db(TABLE_NAME).select('*')
-        .where('price', '>=', product_precoI).andWhere('price', '<=', product_precoF);
-    },    
+            .where('price', '>=', product_precoI).andWhere('price', '<=', product_precoF);
+    },
     insert(product) {
         return db(TABLE_NAME).insert(product);
     },

@@ -10,7 +10,7 @@ db.schema.dropTable(TABLE_NAME);
 //
 // Criando a tabela Lista vazia.
 //
-db.schema.createTableIfNotExists(TABLE_NAME, function(table){
+db.schema.createTableIfNotExists(TABLE_NAME, function (table) {
     table.increments(id_lista);
     table.timestamps(dt_lista);
     table.string(e_mail);

@@ -21,7 +21,7 @@ const IndexListRouter = require("./routes/index_Listas");
 //
 // Rota de Retorno Login Sucesso.
 //
-const adminRouter = require("/routes/admin");
+const adminRouter = require(".../routes/admin");
 
 //
 const app = express();

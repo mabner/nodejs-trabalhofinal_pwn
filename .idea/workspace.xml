@@ -76,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595992193200</updated>
       <workItem from="1595992194913" duration="2461000" />
+      <workItem from="1595997100635" duration="125000" />
     </task>
     <servers />
   </component>
@@ -92,6 +93,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="984" y="373" key="#Scopes" timestamp="1595992856529">

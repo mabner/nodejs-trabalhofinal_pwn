@@ -2,10 +2,10 @@
 /**
  * Module dependencies.
  */
-const app = require('./app');
+const app = require('../app');
 const debug = require('debug')('nodejs-knex:server');
 const http = require('http');
-const { openConnection } = require('./store/Connection');
+const { openConnection } = require('../store/Connection');
 /**
  * Get port from environment and store in Express.
  */

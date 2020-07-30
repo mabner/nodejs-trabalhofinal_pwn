@@ -12,7 +12,7 @@ const commentSchema = new mongoose.Schema({
     },
     emailAut: {
         type: String
-    }
+    }   
 });
 //
 const Comment = mongoose.model('Comment', commentSchema);

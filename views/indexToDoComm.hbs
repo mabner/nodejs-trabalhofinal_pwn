@@ -1,92 +1,97 @@
 <script>
-    //
-    function LimparForm(NomeForm) {
-        document.getElementById(NomeForm).reset();
-    }
-
-    //
-    function ListarToDoComm() {
-        const rota = "/Comments/CommList";
 //
-        console.log(rota);
-        document.forms[0].action = rota;
-        document.forms[0].method = "get";
-        document.forms[0].submit();
+function LimparForm(NomeForm) {
+  document.getElementById(NomeForm).reset();
+}
 //
-    }
-
-    //
-    function InserirToDoComm() {
-        const autor = document.getElementById("autor").value;
-        const comentario = document.getElementById("comentario").value;
-        const datecomm = Date.now();
-        //
-        const email = 'lromerosl@yahoo.com.br';
-        var rota = "/Comments/CommList?Autor=";
-        var rotaid = "";
-        //
-        if (autor == "") {
-            rotaid = rota.concat("Desconhecido");
-        } else {
-            rotaid = rota.concat(autor);
-        }
-        if (comentario == "") {
-            rotaid = rotaid.concat("&Comment=Sem Comentários");
-        } else {
-            rotaid = rotaid.concat("&Comment=");
-            rotaid = rotaid.concat(comentario);
-        }
-        //
-        rotaid = rotaid.concat("&datecomm=");
-        if (datecomm == "") {
-            rotaid = rotaid.concat("01/01/0001");
-        } else {
-            rotaid = rotaid.concat(datecomm);
-        }
-        //
-        rotaid = rotaid.concat("&emailAut=");
-        if (email == "") {
-            rotaid = rotaid.concat("@");
-        } else {
-            rotaid = rotaid.concat(email);
-        }
-        //
-        console.log(rotaid);
-        document.forms[0].action = rotaid;
-        document.forms[0].method = "post";
-        document.forms[0].submit();
-    }
-
-    //
+function ListarToDoComm() {
+   const rota = "/Comments/CommList";
+//
+   console.log(rota);
+   document.forms[0].action = rota;
+   document.forms[0].method = "get";
+   document.forms[0].submit();
+//
+}
+//
+function InserirToDoComm() {
+   const autor = document.getElementById("autor").value;
+   const comentario = document.getElementById("comentario").value;
+   const datecomm = Date.now();
+   // 
+   const email = 'lromerosl@yahoo.com.br';
+   var rota = "/Comments/CommList?Autor=";
+   var rotaid = "";
+   //
+   if (autor == "")
+   {
+      rotaid = rota.concat("Desconhecido");
+   }
+   else
+   {
+      rotaid = rota.concat(autor);
+   }
+   if (comentario == "")
+   {
+      rotaid = rotaid.concat("&Comment=Sem Comentários");
+   }
+   else
+   {
+      rotaid = rotaid.concat("&Comment=");
+      rotaid = rotaid.concat(comentario);
+   }
+   //
+   rotaid = rotaid.concat("&datecomm=");
+   if (datecomm == "")
+   {
+      rotaid = rotaid.concat("01/01/0001");   
+   }
+   else
+   {
+      rotaid = rotaid.concat(datecomm);
+   }
+   //
+   rotaid = rotaid.concat("&emailAut=");
+   if (email == "")
+   {
+      rotaid = rotaid.concat("@");   
+   }
+   else
+   {
+      rotaid = rotaid.concat(email);
+   }
+   //
+   console.log(rotaid);
+   document.forms[0].action = rotaid;
+   document.forms[0].method = "post";
+   document.forms[0].submit();
+}
+//
 </script>
 <!-- -->
 <h1>Aplicativo Listas To-Do</h1>
 <p>Bem-vindo. Entre com seu Comentário da APP</p>
 <br>
 <ul>
-    <div>
-        <form id="ToDoComm" name="ToDoComm" method="" action="" target="_blank">
+        <div>
+            <form id="ToDoComm" name="ToDoComm" method="" action="" target="_blank" >
             <!-- -->
             <fieldset style="background-color: #eeeeee; position:relative; height:auto; width:300px;">
-                <legend style="background-color: gray; color: black; padding: 5px 10px;"><b>Comentário do Produto:</b>
-                </legend>
-                <br>
-                <!-- -->
-                <label for="Autor"><b></b></label>
-                <input type="text" id="autor" name="autor" placeholder="Autor do Comentário" size="30" required> <br>
-                <br>
-                <!-- -->
-                <input type="text" id="comentario" name="comentario" placeholder="Comentário sobre o Produto" size="50"
-                       required> <br> <br>
-                <!-- -->
-                <button type="Submit" onclick="InserirToDoComm()">Inserir Comentário</button>
-                <!-- -->
-                <button type="Submit" onclick="ListarToDoComm()">Listar Comentários</button>
-                <!-- -->
-                <input type="button" onclick="LimparForm('ToDoComm')" value="Reset Form">
-                <!-- -->
+            <legend style="background-color: gray; color: black; padding: 5px 10px;"><b>Comentário do Produto:</b></legend> <br> 
+            <!-- -->
+            <label for="Autor"><b></b></label>
+            <input type="text" id="autor" name="autor" placeholder="Autor do Comentário" size="30" required> <br> <br>
+            <!-- -->
+            <input type="text" id="comentario" name="comentario" placeholder="Comentário sobre o Produto" size="50" required> <br> <br>
+            <!-- -->
+            <button type="Submit" onclick="InserirToDoComm()">Inserir Comentário</button>
+            <!-- -->
+            <button type="Submit" onclick="ListarToDoComm()">Listar Comentários</button>
+            <!-- -->
+            <input type="button" onclick="LimparForm('ToDoComm')" value="Reset Form">
+            <!-- -->
             </fieldset>
             <!-- -->
-        </form>
-    </div>
+            </form>
+        </div>
 </ul>

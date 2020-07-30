@@ -5,7 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 //
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 //
 // Renderiza os Arquivos CSS.
@@ -19,10 +19,10 @@ var task = [];
 // Espaços reservados para tarefa completada
 //
 var complete = [];
-//
-// Adicona uma nova tarefa via Rota POST.
-//
-app.post("/addtask", function (req, res) {
+    //
+    // Adicona uma nova tarefa via Rota POST.
+    //
+    app.post("/addtask", function(req, res) {
     var newTask = req.body.newtask;
     //
     task.push(newTask);
@@ -31,7 +31,7 @@ app.post("/addtask", function (req, res) {
 //
 // Executa a tarefa POST de remoção das Tarefas.
 //
-app.post("/removetask", function (req, res) {
+app.post("/removetask", function(req, res) {
     var completeTask = req.body.check;
     //
     // Verifica o "typeof" das diferentes tarefas concluídas e, em seguida, 
@@ -50,7 +50,7 @@ app.post("/removetask", function (req, res) {
         for (var i = 0; i < completeTask.length; i++) {
             complete.push(completeTask[i]);
             task.splice(task.indexOf(completeTask[i]), 1);
-            //
+        //
         }
     }
     //
@@ -60,12 +60,12 @@ app.post("/removetask", function (req, res) {
 //
 // Randeriza usando os recursos do framework EJS ejs e Mostra as Tarefas Adiconadas.
 //
-app.get("/", function (req, res) {
-    res.render("index", {task: task, complete: complete});
+app.get("/", function(req, res) {
+    res.render("index", { task: task, complete: complete });
 });
 //
 //Seta APP para escutar a Porta 3000.
 //
-app.listen(3000, function () {
+app.listen(3000, function() {
     console.log("Servidor Node.JS executando em Port 3000.");
 });

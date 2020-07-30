@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596084524324</updated>
-      <workItem from="1596084528902" duration="625000" />
+      <workItem from="1596084528902" duration="984000" />
     </task>
     <servers />
   </component>
@@ -72,9 +72,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="939" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596084947768">
+    <state x="939" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596084978034">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="939" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596084947768" />
+    <state x="939" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596084978034" />
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1596085384663">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596085384663" />
+    <state x="1133" y="150" width="585" height="831" key="find.popup" timestamp="1596085517808">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1133" y="150" width="585" height="831" key="find.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596085517808" />
   </component>
 </project>

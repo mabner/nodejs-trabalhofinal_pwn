@@ -24,9 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11793ddd-4e15-41e7-ac46-38fab67f85fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="11793ddd-4e15-41e7-ac46-38fab67f85fe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596084524324</updated>
-      <workItem from="1596084528902" duration="984000" />
+      <workItem from="1596084528902" duration="1324000" />
     </task>
     <servers />
   </component>
@@ -80,9 +78,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596085384663" />
-    <state x="1133" y="150" width="585" height="831" key="find.popup" timestamp="1596085517808">
+    <state x="1133" y="150" width="585" height="831" key="find.popup" timestamp="1596085860408">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1133" y="150" width="585" height="831" key="find.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596085517808" />
+    <state x="1133" y="150" width="585" height="831" key="find.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1596085860408" />
   </component>
 </project>

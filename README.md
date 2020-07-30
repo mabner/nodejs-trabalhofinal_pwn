@@ -6,7 +6,7 @@
 
 ### Professor: [Samuel Martins](https://samuelmartins.me/)
 
-## Enunciado
+## :page_with_curl: Enunciado
 
 #### TO-DO Lists
 
@@ -29,9 +29,9 @@ Vocês foram contratados pela empresa SM Solutions para desenvolver um produto, 
 
 - [x] Os trabalhos entregues em container docker irão receber +5pts extras . Neste caso, todos os componentes necessários para rodar a aplicação deverão estar “containerizados” (servidor nodejs, banco de dados e outros possíveis componentes).
 
-## Projeto
+## :page_with_curl: Projeto
 
-#### Autores
+#### :pushpin: Autores
 
 Jéssica Mello
 
@@ -39,8 +39,26 @@ Luciano Lima
 
 Marcos Leite
 
-#### Link
+#### :pushpin: Como usar
+##### Repositório GitHub
+```bash
+git clone https://github.com/mabner/nodejs-trabalhofinal_pwn.git
+cd nodejs-trabalhofinal_pwn
+npm install
+npm start ou npm run nodemon
+```
+##### Docker Container
+```bash
+docker run -it -p 3000:3000 mrs7/puc
+```
+Para testar entre na URL: http://localhost:3000/
+
+#### :pushpin: Links
 
 Web Deploy - https://nodejs-trabalhofinal-pwn.herokuapp.com/
 
 Docker - https://hub.docker.com/r/mrs7/puc
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzA4NjY2XX0=
+-->

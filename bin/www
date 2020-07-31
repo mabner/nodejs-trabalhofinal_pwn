@@ -23,6 +23,7 @@ openConnection().then(() => {
 	server.on('error', onError);
 	server.on('listening', onListening);
 });
+
 /**
  * Normalize a port into a number, string, or false.
  */
@@ -41,6 +42,7 @@ function normalizePort(val) {
 
 	return false;
 }
+
 /**
  * Event listener for HTTP server "error" event.
  */
@@ -49,11 +51,15 @@ function onError(error) {
 		throw error;
 	}
 	const bind =
-		typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+		typeof port === 'string'
+			? 'Pipe ' + port
+			: 'Port ' + port;
 	// handle specific listen errors with friendly messages
 	switch (error.code) {
 		case 'EACCES':
-			console.error(bind + ' requires elevated privileges');
+			console.error(
+				bind + ' requires elevated privileges'
+			);
 			process.exit(1);
 			break;
 		case 'EADDRINUSE':
@@ -64,6 +70,7 @@ function onError(error) {
 			throw error;
 	}
 }
+
 /**
  * Event listener for HTTP server "listening" event.
  */

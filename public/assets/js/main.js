@@ -8,6 +8,7 @@
 // Função horário.
 //
 var JVhora = setInterval(JVtempo, 1000);
+
 //
 function JVtempo() {
 	var d = new Date();
@@ -17,6 +18,7 @@ function JVtempo() {
 		d +
 		'.</b> </p>';
 }
+
 //
 !(function ($) {
 	'use strict';
@@ -35,42 +37,49 @@ function JVtempo() {
 	}
 
 	// Smooth scroll for the navigation menu and links with .scrollto classes
-	$(document).on('click', '.nav-menu a, .scrollto', function (e) {
-		if (
-			location.pathname.replace(/^\//, '') ==
-				this.pathname.replace(/^\//, '') &&
-			location.hostname == this.hostname
-		) {
-			e.preventDefault();
-			var target = $(this.hash);
-			if (target.length) {
-				var scrollto = target.offset().top;
+	$(document).on(
+		'click',
+		'.nav-menu a, .scrollto',
+		function (e) {
+			if (
+				location.pathname.replace(/^\//, '') ==
+					this.pathname.replace(/^\//, '') &&
+				location.hostname == this.hostname
+			) {
+				e.preventDefault();
+				var target = $(this.hash);
+				if (target.length) {
+					var scrollto = target.offset().top;
 
-				$('html, body').animate(
-					{
-						scrollTop: scrollto,
-					},
-					1500,
-					'easeInOutExpo'
-				);
-
-				if ($(this).parents('.nav-menu, .mobile-nav').length) {
-					$('.nav-menu .active, .mobile-nav .active').removeClass(
-						'active'
+					$('html, body').animate(
+						{
+							scrollTop: scrollto,
+						},
+						1500,
+						'easeInOutExpo'
 					);
-					$(this).closest('li').addClass('active');
-				}
 
-				if ($('body').hasClass('mobile-nav-active')) {
-					$('body').removeClass('mobile-nav-active');
-					$('.mobile-nav-toggle i').toggleClass(
-						'icofont-navigation-menu icofont-close'
-					);
+					if (
+						$(this).parents('.nav-menu, .mobile-nav')
+							.length
+					) {
+						$(
+							'.nav-menu .active, .mobile-nav .active'
+						).removeClass('active');
+						$(this).closest('li').addClass('active');
+					}
+
+					if ($('body').hasClass('mobile-nav-active')) {
+						$('body').removeClass('mobile-nav-active');
+						$('.mobile-nav-toggle i').toggleClass(
+							'icofont-navigation-menu icofont-close'
+						);
+					}
+					return false;
 				}
-				return false;
 			}
 		}
-	});
+	);
 
 	// Activate smooth scroll on page load with hash links in the url
 	$(document).ready(function () {
@@ -89,7 +98,9 @@ function JVtempo() {
 		}
 	});
 
-	$(document).on('click', '.mobile-nav-toggle', function (e) {
+	$(document).on('click', '.mobile-nav-toggle', function (
+		e
+	) {
 		$('body').toggleClass('mobile-nav-active');
 		$('.mobile-nav-toggle i').toggleClass(
 			'icofont-navigation-menu icofont-close'
@@ -132,7 +143,9 @@ function JVtempo() {
 					.addClass('active');
 			}
 			if (cur_pos < 300) {
-				$('.nav-menu ul:first li:first').addClass('active');
+				$('.nav-menu ul:first li:first').addClass(
+					'active'
+				);
 			}
 		});
 	});
@@ -167,7 +180,10 @@ function JVtempo() {
 	$('.skills-content').waypoint(
 		function () {
 			$('.progress .progress-bar').each(function () {
-				$(this).css('width', $(this).attr('aria-valuenow') + '%');
+				$(this).css(
+					'width',
+					$(this).attr('aria-valuenow') + '%'
+				);
 			});
 		},
 		{
@@ -177,13 +193,17 @@ function JVtempo() {
 
 	// Porfolio isotope and filter
 	$(window).on('load', function () {
-		var portfolioIsotope = $('.portfolio-container').isotope({
+		var portfolioIsotope = $(
+			'.portfolio-container'
+		).isotope({
 			itemSelector: '.portfolio-item',
 			layoutMode: 'fitRows',
 		});
 
 		$('#portfolio-flters li').on('click', function () {
-			$('#portfolio-flters li').removeClass('filter-active');
+			$('#portfolio-flters li').removeClass(
+				'filter-active'
+			);
 			$(this).addClass('filter-active');
 
 			portfolioIsotope.isotope({
@@ -232,6 +252,7 @@ function JVtempo() {
 			once: true,
 		});
 	}
+
 	$(window).on('load', function () {
 		aos_init();
 	});
@@ -247,4 +268,5 @@ function CarregarInicial() {
 		window.location.reload();
 	};
 }
+
 //

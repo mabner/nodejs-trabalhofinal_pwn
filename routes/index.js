@@ -13,7 +13,9 @@ router.get('/auth/github', passport.authenticate('github'));
 //
 router.get(
 	'/auth/github/callback',
-	passport.authenticate('github', { failureRedirect: '/login' }), // Falha no Login.
+	passport.authenticate('github', {
+		failureRedirect: '/login',
+	}), // Falha no Login.
 	function (req, res, next) {
 		// Sucesso no Login.
 		res.redirect('/admin');

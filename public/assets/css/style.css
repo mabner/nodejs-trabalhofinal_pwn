@@ -147,6 +147,7 @@ h6 {
 	#header {
 		left: -300px;
 	}
+
 	#main {
 		margin-left: 0;
 	}
@@ -292,6 +293,7 @@ h6 {
 		font-size: 28px;
 		line-height: 36px;
 	}
+
 	#hero h2 {
 		font-size: 18px;
 		line-height: 24px;
@@ -985,9 +987,11 @@ section {
 	.breadcrumbs .d-flex {
 		display: block !important;
 	}
+
 	.breadcrumbs ol {
 		display: block;
 	}
+
 	.breadcrumbs ol li {
 		display: inline-block;
 	}
@@ -1024,7 +1028,9 @@ section {
 	background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.portfolio-details
+	.portfolio-details-carousel
+	.owl-dot.active {
 	background-color: #149ddd !important;
 }
 
@@ -1075,6 +1081,7 @@ section {
 	.portfolio-details .portfolio-description h2 {
 		width: 100%;
 	}
+
 	.portfolio-details .portfolio-info {
 		position: static;
 		margin-top: 30px;

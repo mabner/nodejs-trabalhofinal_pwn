@@ -7,11 +7,15 @@ const {
 //
 /* GET home page. */
 //
-router.get('/', GarantirAcessoAutenticado, (req, res, next) => {
-	//
-	req.logout();
-	res.redirect('/login');
-	//
-});
+router.get(
+	'/',
+	GarantirAcessoAutenticado,
+	(req, res, next) => {
+		//
+		req.logout();
+		res.redirect('/login');
+		//
+	}
+);
 
 module.exports = router;

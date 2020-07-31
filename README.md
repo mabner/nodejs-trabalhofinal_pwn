@@ -40,17 +40,22 @@ Luciano Lima
 Marcos Leite
 
 #### :pushpin: Como usar
+
 ##### Repositório GitHub
+
 ```bash
 git clone https://github.com/mabner/nodejs-trabalhofinal_pwn.git
 cd nodejs-trabalhofinal_pwn
 npm install
 npm start ou npm run nodemon
 ```
+
 ##### Docker Container
+
 ```bash
-docker run -it -p 3000:3000 mrs7/puc
+docker run -it -p 3000-3001:3000-3001 mrs7/puc
 ```
+
 Para testar entre na URL: http://localhost:3000/
 
 #### :pushpin: Links

@@ -20,17 +20,18 @@
     "express-session": "^1.17.1",
     "hbs": "^4.1.1",
     "http-errors": "~1.6.3",
-    "knex": ">=0.19.5",
+    "knex": "^0.19.5",
     "knex-migrate": "^1.7.4",
     "mongoose": "^5.9.26",
     "morgan": "~1.9.1",
     "passport": "^0.4.1",
     "passport-github": "^1.1.0",
     "sidebar-js": "^1.0.4",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^4.2.0",
+    "dotenv": "^8.0.0"
   },
   "devDependencies": {
     "jest": "^24.8.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^2.0.4"
   }
 }

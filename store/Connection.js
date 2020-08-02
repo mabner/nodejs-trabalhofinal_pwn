@@ -1,9 +1,14 @@
 const mongoose = require('mongoose');
-// const connectionString = 'mongodb+srv://DBlrsl:ebdgJDDQ0DLZbF3S@cluster0-llxlg.mongodb.net/Lromerosl?retryWrites=true&w=majority'
-const connectionString = 'mongodb+srv://DBlrsl:1234509876@cluster0-llxlg.mongodb.net/Lromerosl?retryWrites=true&w=majority'
 
-const openConnection = () => mongoose.connect(connectionString, { useNewUrlParser: true } )
+//New Server Discover and Monitoring engine, removes the message about current being deprecated
+mongoose.set('useUnifiedTopology', true);
+//MongoDB connection
+const connectionString =
+	'mongodb+srv://mrfishman:GACjfWg5FJD3Qj2@cluster0.060t3.gcp.mongodb.net/puc?retryWrites=true&w=majority';
+
+const openConnection = () =>
+	mongoose.connect(connectionString, { useNewUrlParser: true });
 
 module.exports = {
-    openConnection,
-}
+	openConnection,
+};

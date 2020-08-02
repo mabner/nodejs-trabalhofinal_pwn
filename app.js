@@ -1,8 +1,9 @@
-const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+const createError = require('http-errors');
 const express = require('express');
+const logger = require('morgan');
 const passport = require('passport');
+
 // const http = require('http'); // adicionado ao Original.
 const path = require('path');
 //

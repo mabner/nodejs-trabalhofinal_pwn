@@ -1,264 +1,380 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- -->
-<!-- -->
-<head>
-<!-- -->
-  <title>Listas TO-DO</title>
-<!-- -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- -->
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-<!-- W3Schools Style -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- -->
-  <!-- Favicons -->
-  <link href="../assets/img/lrsl.png" rel="icon">
+	<head>
+		<title>Listas TO-DO</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+		<!-- W3Schools Style -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  * Autor: Luciano Lima
-  ======================================================== -->
-<!-- -->
-</head>
-<!-- -->
-<!-- -->
-<body>
-<!-- -->
-<!-- -->
-<!-- -->
-<div id="main" style="margin-left:0%">
-   <!-- -->
-   <!-- -->
-   <div id="Cabecalho" class="w3-container w3-teal" >
-        <center>
-            <h1 class="">SM Solutions  </h1>
-            <h1>  Controle de Listas To-Do</h1>
-            <p>   Bem-vindo à Sessão de Comentários do Aplicativo de Listas To-Do. </p>
-        </center>
-   </div>
-</div>
-<script>
-//
-function LimparForm(NomeForm) {
-  document.getElementById(NomeForm).reset();
-}
-//
-function ListarToDoComm() {
-   const rota = "/Comments/CommList";
-//
-   console.log(rota);
-   document.forms[0].action = rota;
-   document.forms[0].method = "get";
-   document.forms[0].submit();
-//
-}
-//
-function InserirToDoComm() {
-   const autor = document.getElementById("autor").value;
-   const comentario = document.getElementById("comentario").value;
-   const datecomm = Date.now();
-   // 
-   const email = 'lromerosl@yahoo.com.br'; //Usuário administrador do Sistema de Comentários.
-   //
-   var rota = "/Comments/CommList?Autor=";
-   var rotaid = "";
-   //
-   if (autor == "")
-   {
-      rotaid = rota.concat("Desconhecido");
-   }
-   else
-   {
-      rotaid = rota.concat(autor);
-   }
-   if (comentario == "")
-   {
-      rotaid = rotaid.concat("&Comment=Sem Comentários");
-   }
-   else
-   {
-      rotaid = rotaid.concat("&Comment=");
-      rotaid = rotaid.concat(comentario);
-   }
-   //
-   rotaid = rotaid.concat("&datecomm=");
-   if (datecomm == "")
-   {
-      rotaid = rotaid.concat("01/01/0001");   
-   }
-   else
-   {
-      rotaid = rotaid.concat(datecomm);
-   }
-   //
-   rotaid = rotaid.concat("&emailAut=");
-   if (email == "")
-   {
-      rotaid = rotaid.concat("@");   
-   }
-   else
-   {
-      rotaid = rotaid.concat(email);
-   }
-   //
-   console.log(rotaid);
-   document.forms[0].action = rotaid;
-   document.forms[0].method = "post";
-   document.forms[0].submit();
-}
-//
-</script>
-<!-- -->
-<center>
-<ul>
-        <div>
-            <form id="ToDoComm" name="ToDoComm" method="" action="" target="_blank" >
-            <!-- -->
-            <fieldset style="background-color: #eeeeee; position:relative; height:230px; width:480px;">
-            <legend style="background-color: gray; color: black; padding: 5px 10px;"><b>Comentário do Produto:</b></legend> <br> 
-            <!-- -->
-            <label for="Autor"><b></b></label>
-            <input type="text" id="autor" name="autor" placeholder="Autor do Comentário" size="30" required> <br> <br>
-            <!-- -->
-            <input type="text" id="comentario" name="comentario" placeholder="Comentário sobre o Produto" size="50" required> <br> <br>
-            <!-- -->
-            <button type="Submit" onclick="InserirToDoComm()">Inserir Comentário</button>
-            <!-- -->
-            <button type="Submit" onclick="ListarToDoComm()">Listar Comentários</button>
-            <!-- -->
-            <input type="button" onclick="LimparForm('ToDoComm')" value="Reset Form">
-            <!-- -->
-            </fieldset>
-            <!-- -->
-            </form>
-        </div>
-</ul>
-</center>
-<!-- -->
-<!-- -->
-    <!-- -->
-    <!-- ======= About Section ======= -->
-    <!-- -->
-    <section id="about" class="about">
-      <div class="container">
-        <div style="margin-left:22.50%">
-          <div class="section-title">
-            <h2>Sobre</h2>
-            <p>A Teconologia surgiu para <b> AJUDAR </b>  a melhorar a vida humana e a vida na terra, tornando-as mais solidárias, felizes, eficientes e produtivas. Qualquer coisa diferente desses objetivos está <b>FORA</b> da Curva.</p> <br>
+		<!-- Template Main CSS File -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="/public/stylesheets/style.css"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+			crossorigin="anonymous"
+		/>
+	</head>
 
-            <p>Com esse objetivo, lançamos o aplicativo (APP) Lista To-Do, um APP para dispositivos móveis e desktops, 
-             cuja a finalidade principal é ajudar você a organizar seu dia a dia, infelizmente ou felizmente, mais atarefado e complexo. 
-             O APP, como o seu nome sugere, permite ao usuário criar listas de tarefas para organizar o seu dia a dia 
-             de forma simples e rápida. Atualmente, a aplicação encontra-se disponível para ser executado através de um 
-             Browser, e portanto, ele é acessível de qualquer sistema operacional disponível no mercado como Windows, Android e iOs.
-            </p> <br>
-            <p>  
-             Nessa página, você pode nos enviar seus comentários sobre o aplicativo Listas To-Do. Veja como. 
-            </p> <br>
-            <div id="dicas">
-              <p>   1. Identifique-se com seu Nome ou Pseudônimo. </p> <br>
-              <p>   2. Escreva um Comentário com no máximo 50 caracteres. </p> <br>   
-              <p>   3. Clique no botão <b>Inserir Comentários</b> que suas opiniões, sugestões, elogios e críticas serão registrados no nosso Banco de Dados. </p> <br>    
-              <p>   4. Após o registro de seu comentário, a lista dos comentários dos usuários será exibida. </p> <br>    
-              <p>   5. Caso você queira só listar os comentários cadastrados no nosso banco de dados, clique no botão <b>Listar Comentários</b>. </p> <br>    
-              <p>   6. Após o uso dessa página, feche-a. </p> <br>
-              <p>   7. Pronto, simples, fácil e rápido.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-<!-- -->
-<!-- -->
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div style="margin-left:22.50%">
-          <div class="section-title">
-            <h2>Contato</h2>
-            <p>Use os canais abaixo para entrar em contato com a SM Solutions.</p> <br>
-            <div class="col-lg-7 d-flex align-items-stretch">
-             <div class="info">
-               <!-- -->
-               <div class="address">
-                 <i class="icofont-google-map"></i>
-                 <h4>Endereço:</h4>
-                 <p>Rua Quintiliano Silva, 37/802, BH/MG, 30350-040</p>
-               </div>
-               <!-- -->
-               <div class="email">
-                 <i class="icofont-envelope"></i>
-                 <h4>E-mail: </h4>
-                 <p><a href="mailto:luciano.limanokia@outlook.com.br">luciano.limanokia@outlook.com.br</a></p>
-               </div>
-               <!-- -->
-               <div class="phone">
-                 <i class="icofont-brand-whatsapp"></i>
-                 <h4>Celular:</h4>
-                 <p>+55 31 99114-4226</p>
-               </div>
-               <!-- -->
-               <div class="Mapa-Bing">
-                 <i class="icofont-brand-microsoft"></i>
-                 <h4>Bing Mapas:</h4>
-                 <p>
-                   <a href="https://www.bing.com/maps?osid=763d89e0-2133-4069-a985-4bf37ddb442b&cp=-19.93892~-43.945077&lvl=18&v=2&sV=2&form=S00027" target="_blank">Click Aqui (Rua Conselheiro Quintiliano Silva).</a>
-                 </p>
-               </div>
-               <!-- -->
-               <div class="Mapa-Google">
-                 <i class="icofont-brand-google"></i>
-                 <h4>Google Mapas:</h4>
-                 <p>
-                   <a href="https://www.google.com.br/maps/place/Condom%C3%ADnio+do+Edif%C3%ADcio+Sevilla+-+Rua+Quintiliano+Silva,+37+-+Santo+Ant%C3%B4nio,+Belo+Horizonte+-+MG,+30110-047/@-19.9389659,-43.9473335,17z/data=!3m1!4b1!4m5!3m4!1s0xa6977d09447927:0x35ed0a4b02a61a91!8m2!3d-19.938971!4d-43.9451448" target="_blank">Click Aqui (Rua Conselheiro Quintiliano Silva).</a>
-                 </p>
-               </div>
-              </div>
-            </div>
-          </div>
-          <!-- -->
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <center>
-            <table id="Adeus">
-                <tr>
-                  <th>
-                    Fiquem com o belo Pôr do Sol da Praia do Jacaré (João Pessoa-PB)
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    <br>
-                    <br>
-                    <img width="650" src = "../assets/img/praiaJacare.png" alt = "Pôr do Sol - Praia do Jacaré">
-                  </td>
-                </tr>
-             </table>
-            </center> 
-          </div>
-          <!-- -->
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-<!-- -->
-</body>
+	<body>
+		<script>
+			//
+			// Funções que abrem e fecha o Menu.
+			//
+			function openNav() {
+				document.getElementById('mySidenav').style.width = '200px';
+				document.getElementById('main').style.marginLeft = '200px';
+			}
+
+			//
+			function closeNav() {
+				document.getElementById('mySidenav').style.width = '0';
+				document.getElementById('main').style.marginLeft = '0';
+			}
+
+			//
+		</script>
+		<div id="main" style="margin-left: 16%;">
+			<div id="Cabecalho" class="w3-container w3-teal">
+				<center>
+					<h1 class="">
+						SM Solutions
+						<span
+							style="font-size: 30px; cursor: pointer;"
+							onclick="openNav()"
+						>
+							&#9776; Menu</span
+						>
+					</h1>
+					<h1>Controle de Listas To-Do</h1>
+					<p>
+						Bem-vindo ao Aplicativo de Listas de Tarefas da SM Solutions.
+					</p>
+				</center>
+			</div>
+		</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="/tasks">Início</a>
+			<a href="#">Listas</a>
+			<a href="/tasks">Tarefas</a>
+			<a href="/tasks/#about">Sobre</a>
+			<a href="/ListatodoComment">Comentários</a>
+			<a href="#contact">Contatos</a>
+			<a href="/logout">Logout</a>
+		</div>
+		<script>
+			//
+			function LimparForm(NomeForm) {
+				document.getElementById(NomeForm).reset();
+			}
+			//
+			function ListarToDoComm() {
+				const rota = '/Comments/CommList';
+				//
+				console.log(rota);
+				document.forms[0].action = rota;
+				document.forms[0].method = 'get';
+				document.forms[0].submit();
+				//
+			}
+			//
+			function InserirToDoComm() {
+				const autor = document.getElementById('autor').value;
+				const comentario = document.getElementById('comentario').value;
+				const datecomm = Date.now();
+				//
+				const email = 'lromerosl@yahoo.com.br'; //Usuário administrador do Sistema de Comentários.
+				//
+				var rota = '/Comments/CommList?Autor=';
+				var rotaid = '';
+				//
+				if (autor == '') {
+					rotaid = rota.concat('Desconhecido');
+				} else {
+					rotaid = rota.concat(autor);
+				}
+				if (comentario == '') {
+					rotaid = rotaid.concat('&Comment=Sem Comentários');
+				} else {
+					rotaid = rotaid.concat('&Comment=');
+					rotaid = rotaid.concat(comentario);
+				}
+				//
+				rotaid = rotaid.concat('&datecomm=');
+				if (datecomm == '') {
+					rotaid = rotaid.concat('01/01/0001');
+				} else {
+					rotaid = rotaid.concat(datecomm);
+				}
+				//
+				rotaid = rotaid.concat('&emailAut=');
+				if (email == '') {
+					rotaid = rotaid.concat('@');
+				} else {
+					rotaid = rotaid.concat(email);
+				}
+				//
+				console.log(rotaid);
+				document.forms[0].action = rotaid;
+				document.forms[0].method = 'post';
+				document.forms[0].submit();
+			}
+			//
+		</script>
+
+		<center>
+			<ul>
+				<div>
+					<form
+						id="ToDoComm"
+						name="ToDoComm"
+						method=""
+						action=""
+						target="_blank"
+					>
+						<fieldset
+							style="
+								background-color: #eeeeee;
+								position: relative;
+								height: 230px;
+								width: 480px;
+							"
+						>
+							<legend
+								style="
+									background-color: gray;
+									color: black;
+									padding: 5px 10px;
+								"
+							>
+								<b>Comentário do Produto:</b>
+							</legend>
+							<br />
+
+							<label for="Autor"><b></b></label>
+							<input
+								type="text"
+								id="autor"
+								name="autor"
+								placeholder="Autor do Comentário"
+								size="30"
+								required
+							/>
+							<br />
+							<br />
+
+							<input
+								type="text"
+								id="comentario"
+								name="comentario"
+								placeholder="Comentário sobre o Produto"
+								size="50"
+								required
+							/>
+							<br />
+							<br />
+
+							<button type="Submit" onclick="InserirToDoComm()">
+								Inserir Comentário
+							</button>
+
+							<button type="Submit" onclick="ListarToDoComm()">
+								Listar Comentários
+							</button>
+
+							<input
+								type="button"
+								onclick="LimparForm('ToDoComm')"
+								value="Reset Form"
+							/>
+						</fieldset>
+					</form>
+				</div>
+			</ul>
+		</center>
+
+		<!-- ======= About Section ======= -->
+
+		<section id="about" class="about">
+			<div class="container">
+				<div style="margin-left: 22.5%;">
+					<div class="section-title">
+						<h2>Sobre</h2>
+						<p>
+							A Teconologia surgiu para <b> AJUDAR </b> a melhorar a vida
+							humana e a vida na terra, tornando-as mais solidárias,
+							felizes, eficientes e produtivas. Qualquer coisa diferente
+							desses objetivos está <b>FORA</b> da Curva.
+						</p>
+						<br />
+
+						<p>
+							Com esse objetivo, lançamos o aplicativo (APP) Lista To-Do,
+							um APP para dispositivos móveis e desktops, cuja a
+							finalidade principal é ajudar você a organizar seu dia a
+							dia, infelizmente ou felizmente, mais atarefado e complexo.
+							O APP, como o seu nome sugere, permite ao usuário criar
+							listas de tarefas para organizar o seu dia a dia de forma
+							simples e rápida. Atualmente, a aplicação encontra-se
+							disponível para ser executado através de um Browser, e
+							portanto, ele é acessível de qualquer sistema operacional
+							disponível no mercado como Windows, Android e iOs.
+						</p>
+						<br />
+						<p>
+							Nessa página, você pode nos enviar seus comentários sobre o
+							aplicativo Listas To-Do. Veja como.
+						</p>
+						<br />
+						<div id="dicas">
+							<p>1. Identifique-se com seu Nome ou Pseudônimo.</p>
+							<br />
+							<p>
+								2. Escreva um Comentário com no máximo 50 caracteres.
+							</p>
+							<br />
+							<p>
+								3. Clique no botão <b>Inserir Comentários</b> que suas
+								opiniões, sugestões, elogios e críticas serão
+								registrados no nosso Banco de Dados.
+							</p>
+							<br />
+							<p>
+								4. Após o registro de seu comentário, a lista dos
+								comentários dos usuários será exibida.
+							</p>
+							<br />
+							<p>
+								5. Caso você queira só listar os comentários cadastrados
+								no nosso banco de dados, clique no botão
+								<b>Listar Comentários</b>.
+							</p>
+							<br />
+							<p>6. Após o uso dessa página, feche-a.</p>
+							<br />
+							<p>7. Pronto, simples, fácil e rápido.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Section -->
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container">
+				<div style="margin-left: 22.5%;">
+					<div class="section-title">
+						<h2>Contato</h2>
+						<p>
+							Use os canais abaixo para entrar em contato com a SM
+							Solutions.
+						</p>
+						<br />
+						<div class="col-lg-7 d-flex align-items-stretch">
+							<div class="info">
+								<div class="address">
+									<i class="icofont-google-map"></i>
+									<h4>Endereço:</h4>
+									<p>
+										Rua Quintiliano Silva, 37/802, BH/MG, 30350-040
+									</p>
+								</div>
+
+								<div class="email">
+									<i class="icofont-envelope"></i>
+									<h4>E-mail:</h4>
+									<p>
+										<a href="mailto:luciano.limanokia@outlook.com.br"
+											>luciano.limanokia@outlook.com.br</a
+										>
+									</p>
+								</div>
+
+								<div class="phone">
+									<i class="icofont-brand-whatsapp"></i>
+									<h4>Celular:</h4>
+									<p>+55 31 99114-4226</p>
+								</div>
+
+								<div class="Mapa-Bing">
+									<i class="icofont-brand-microsoft"></i>
+									<h4>Bing Mapas:</h4>
+									<p>
+										<a
+											href="https://www.bing.com/maps?osid=763d89e0-2133-4069-a985-4bf37ddb442b&cp=-19.93892~-43.945077&lvl=18&v=2&sV=2&form=S00027"
+											target="_blank"
+											>Click Aqui (Rua Conselheiro Quintiliano
+											Silva).</a
+										>
+									</p>
+								</div>
+
+								<div class="Mapa-Google">
+									<i class="icofont-brand-google"></i>
+									<h4>Google Mapas:</h4>
+									<p>
+										<a
+											href="https://www.google.com.br/maps/place/Condom%C3%ADnio+do+Edif%C3%ADcio+Sevilla+-+Rua+Quintiliano+Silva,+37+-+Santo+Ant%C3%B4nio,+Belo+Horizonte+-+MG,+30110-047/@-19.9389659,-43.9473335,17z/data=!3m1!4b1!4m5!3m4!1s0xa6977d09447927:0x35ed0a4b02a61a91!8m2!3d-19.938971!4d-43.9451448"
+											target="_blank"
+											>Click Aqui (Rua Conselheiro Quintiliano
+											Silva).</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+						<center>
+							<table id="Adeus">
+								<tr>
+									<th>
+										Fiquem com o belo Pôr do Sol da Praia do Jacaré
+										(João Pessoa-PB)
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<br />
+										<br />
+										<img
+											width="650"
+											src="../images/praiaJacare.png"
+											alt="Pôr do Sol - Praia do Jacaré"
+										/>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+	</body>
 </html>

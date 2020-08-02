@@ -19,6 +19,7 @@ router.get('/', GarantirAcessoAutenticado, async function (req, res, next) {
 	Listas.getLAT(UsrNome, status).then(
 		await function (listas) {
 			res.render('index_Listas_Pagina', {
+				title: 'Portal de Listas ToDo',
 				listas,
 				user: UsrNome,
 				usrname: NomeUser,

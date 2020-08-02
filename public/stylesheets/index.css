@@ -1,0 +1,66 @@
+:root {
+	--clr-primary: #577880;
+	--clr-light: #f4f4f4;
+	--clr-dark: #333;
+	--clr-warning: rgb(99, 36, 36);
+}
+
+*,
+*::before,
+*::after {
+	font-family: inherit;
+	box-sizing: border-box;
+}
+.btn-github {
+	background-color: #2a2a2a;
+	background-image: url('../images/github.svg');
+	background-position: 1em;
+	background-repeat: no-repeat;
+	background-size: 2em;
+	border-radius: 0.5em;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 1em;
+	height: 3em;
+	line-height: 1em;
+	padding: 0 2em 0 4em;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.btn-github:hover {
+	background-color: #444444;
+}
+.btn-github:active {
+	background-color: #101010;
+}
+
+#btn-container {
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo-container {
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo {
+	width: auto;
+	height: 600px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+	background-color: var(--clr-primary);
+	color: var(--clr-light);
+}

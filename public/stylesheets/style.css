@@ -1,194 +1,207 @@
 body {
-	padding: 50px;
-	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-	color: #00b7ff;
+    color: #00B7FF;
 }
 
 .title {
-	grid-area: header;
-	text-align: center;
-	font-size: calc(6vw + 2rem);
-	font-weight: 700;
-	color: rgba(0, 0, 0, 0.1);
-	letter-spacing: 2px;
-	margin: -0.3em 0 0.5em;
+    grid-area: header;
+    text-align: center;
+    font-size: calc(6vw + 2rem);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    margin: -0.3em 0 0.5em;
 }
 
 .titulo {
-	display: flex;
-	justify-content: center; /* centraliza o texto horizontalmente */
-	align-items: center; /* centraliza as linhas verticalmente */
-	margin: 30px 0; /* 30px -> margens superior e inferior */
+    display: flex;
+    justify-content: center; /* centraliza o texto horizontalmente */
+    align-items: center; /* centraliza as linhas verticalmente */
+    margin: 30px 0; /* 30px -> margens superior e inferior */
 }
 
 .titulo::before,
 .titulo::after {
-	content: '';
-	position: relative;
-	height: 1px; /* espessura das linhas */
-	background: #666; /* cor das linhas */
-	min-width: 50px; /* largura mínima das linhas */
-	flex-grow: 1; /* distribui a largura das linhas por igual */
+    content: '';
+    position: relative;
+    height: 1px; /* espessura das linhas */
+    background: #666; /* cor das linhas */
+    min-width: 50px; /* largura mínima das linhas */
+    flex-grow: 1; /* distribui a largura das linhas por igual */
 }
 
 .titulo span {
-	color: #fff; /* cor do texto */
-	padding: 0 15px; /* distancia do texto às linhas */
-	font-weight: bold; /* negrito */
-	font-size: 2em; /* tamanho do texto */
+    color: #fff; /* cor do texto */
+    padding: 0 15px; /* distancia do texto às linhas */
+    font-weight: bold; /* negrito */
+    font-size: 2em; /* tamanho do texto */
 }
 
 .sidenav {
-	height: 100%;
-	width: 200px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #53868b;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #53868B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #fff;
-	display: block;
-	transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
-	color: #c2bebe;
+    color: #c2bebe;
 }
 
 .sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 #main {
-	margin-top: -1%;
-	transition: margin-left 0.5s;
-	padding: 16px;
+    margin-top: -1%;
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-	}
+    .sidenav {
+        padding-top: 15px;
+    }
 
-	.sidenav a {
-		font-size: 18px;
-	}
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
 
 /*TODO CSS*/
 .todo-container {
-	color: white;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	padding: 20px;
-	width: 600px;
-	transform: translate(-50%, -50%);
-	background: #53868b;
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: #53868B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	margin-top: 15%;
+    margin-top: 15%;
 }
 
 .todo {
-	width: 400px;
+    width: 400px;
 }
+
 .todo-container h2 {
-	padding: 10px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	font-size: 2em;
+    padding: 10px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 2em;
 }
+
 .todo-header input {
-	width: 92%;
-	border: none;
-	border-radius: 5px;
-	height: 20px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+    width: 92%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 .todo-header button {
-	color: white;
-	border: none;
-	border-radius: 50%;
-	cursor: pointer;
-	padding: 5px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	background-color: rgb(51, 212, 100);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(51, 212, 100);
 }
+
 .todo-container ul {
-	list-style: none;
+    list-style: none;
 }
+
 .todo-list-item {
-	padding: 10px;
-	margin-top: 10px;
-	border: none;
-	border-radius: 5px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	background: rgba(0, 0, 0, 0.3);
-	display: flex;
-	flex-direction: row;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
 }
+
 .todo-list-item form {
-	width: 100%;
-	display: flex;
+    width: 100%;
+    display: flex;
 }
+
 .todo-list-item input {
-	flex-grow: 2;
-	margin-right: 20px;
-	border: none;
-	border-radius: 5px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+    flex-grow: 2;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 .todo-list-item button {
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	padding: 5px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	background-color: rgb(51, 212, 100);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(51, 212, 100);
 }
+
 .todo-list-item .cancel {
-	color: white;
-	text-decoration: none;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	padding: 5px;
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	background-color: rgb(223, 43, 43);
-	margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(223, 43, 43);
+    margin-left: 5px;
 }
+
 .todo-list-item div {
-	flex-grow: 2;
+    flex-grow: 2;
 }
+
 .todo-list-item .edit {
-	color: rgb(143, 233, 58);
-	margin-right: 10px;
-	cursor: pointer;
-	text-decoration: none;
+    color: rgb(143, 233, 58);
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
+
 .todo-list-item .remove {
-	color: rgb(243, 96, 96);
-	margin-right: 5px;
-	cursor: pointer;
-	text-decoration: none;
+    color: rgb(243, 96, 96);
+    margin-right: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }

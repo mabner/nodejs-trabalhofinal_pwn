@@ -1,8 +1,64 @@
-<h1> Aplicativo Listas ToDo</h1>
-<p>Veja os Comentários do Aplicativo Lista ToDo:</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- -->
+<!-- -->
+<head>
+<!-- -->
+  <title>Listas TO-DO</title>
+<!-- -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+<!-- W3Schools Style -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- -->
+  <!-- Favicons -->
+  <link href="../assets/img/lrsl.png" rel="icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  * Autor: Luciano Lima
+  ======================================================== -->
+<!-- -->
+</head>
+<!-- -->
+<!-- -->
+<body>
+<!-- -->
+<!-- -->
+<!-- -->
+<div id="main" style="margin-left:0%">
+   <!-- -->
+   <!-- -->
+   <div id="Cabecalho" class="w3-container w3-teal" >
+        <center>
+            <h1 class="">SM Solutions  </h1>
+            <h1>  Controle de Listas To-Do</h1>
+            <p>   Comentários sobre Aplicativo Listas To-Do. </p>
+        </center>
+   </div>
+</div>
+<br>
 <ul>
-    <h3> Comentários: </h3>
     {{#each commentaries}}
         <li>
             <p><b>Autor</b>: {{this.author}} - <b>Data</b>: {{this.datecomm}}</p>
@@ -11,3 +67,6 @@
         </li>
     {{/each}}
 </ul>
+<!-- -->
+</body>
+</html>

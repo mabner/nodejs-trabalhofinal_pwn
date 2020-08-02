@@ -9,27 +9,27 @@ const TABLE_NAME = 'listas';
 //
 module.exports = {
     getL(user) {
-        return dbL(TABLE_NAME).select('*').where('e_mail', user);
+       return dbL(TABLE_NAME).select('*').where('e_mail', user);
     },
     getLA(user, lista_st) {
         return dbL(TABLE_NAME).select('*').where('st_inativo', lista_st)
-            .andWhere('e_mail', user).orderBy('ds_lista');
+        .andWhere('e_mail', user).orderBy('ds_lista');
     },
     getLAT(user, lista_st) {
-        return dbL(TABLE_NAME).select('listas.id_lista', 'listas.ds_lista', 'listas.dt_lista', 'listas.st_inativo', 'tarefas.ds_tarefa', 'tarefas.dt_tarefa')
-            .leftJoin('tarefas', 'listas.id_lista', 'tarefas.id_lista')
-            .where('listas.st_inativo', lista_st)
-            .andWhere('listas.e_mail', user)
-            .orderBy('listas.ds_lista', 'tarefas.ds_tarefa');
+        return dbL(TABLE_NAME).select('listas.id_lista', 'listas.ds_lista', 'listas.dt_lista', 'listas.st_inativo' , 'tarefas.ds_tarefa', 'tarefas.dt_tarefa')
+        .leftJoin('tarefas', 'listas.id_lista', 'tarefas.id_lista')
+        .where('listas.st_inativo', lista_st)
+        .andWhere('listas.e_mail', user)
+        .orderBy('listas.ds_lista', 'tarefas.ds_tarefa');
     },
     getLbyID(lista_id) {
         return dbL(TABLE_NAME).select('*')
-            .where('id_lista', lista_id);
-    },
+        .where('id_lista', lista_id);
+    },    
     getLbyNM(lista_ds) {
         return dbL(TABLE_NAME).select('*')
-            .where('ds_lista', 'like', '%' + lista_ds + '%');
-    },
+        .where('ds_lista', 'like', '%' + lista_ds + '%');
+    },    
     insertL(lista) {
         return dbL(TABLE_NAME).insert(lista);
     },

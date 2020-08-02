@@ -53,7 +53,8 @@ npm start ou npm run nodemon
 ##### Docker Container
 
 ```bash
-docker run -it -p 3000-3001:3000-3001 mrs7/puc
+docker pull mrs7/puc:latest
+docker run -it -p 3000-3002:3000-3002 mrs7/puc
 ```
 
 Para testar entre na URL: http://localhost:3000/
@@ -63,7 +64,3 @@ Para testar entre na URL: http://localhost:3000/
 Web Deploy - https://nodejs-trabalhofinal-pwn.herokuapp.com/
 
 Docker - https://hub.docker.com/r/mrs7/puc
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4NjY2XX0=
--->

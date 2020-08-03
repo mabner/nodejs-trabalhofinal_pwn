@@ -8,14 +8,6 @@ const logger = require('morgan');
 const passport = require('passport');
 
 const io = require('socket.io')(httpchat);
-const redis = require('socket.io-redis');
-io.adapter(
-	redis({
-		host: 'https://nodejs-trabalhofinal-pwn.herokuapp.com/',
-		port: 6379,
-	})
-);
-io.emit('hi', 'all sockets');
 
 // const http = require('http'); // adicionado ao Original.
 const path = require('path');

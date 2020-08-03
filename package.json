@@ -19,18 +19,14 @@
 		"express-session": "^1.17.1",
 		"hbs": "^4.1.1",
 		"http-errors": "^1.8.0",
-		"ioredis": "^4.17.3",
 		"knex": "^0.21.2",
 		"knex-migrate": "^1.7.4",
 		"mongoose": "^5.9.26",
 		"morgan": "^1.10.0",
 		"passport": "^0.4.1",
 		"passport-github": "^1.1.0",
-		"redis": "^3.0.2",
 		"sidebar-js": "^1.0.4",
 		"socket.io": "^2.3.0",
-		"socket.io-adapter": "^1.1.2",
-		"socket.io-client": "^2.3.0",
 		"sqlite3": "^5.0.0"
 	},
 	"devDependencies": {

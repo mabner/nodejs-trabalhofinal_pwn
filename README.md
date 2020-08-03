@@ -15,7 +15,7 @@ Vocês foram contratados pela empresa SM Solutions para desenvolver um produto, 
 -  [x] Por questões de segurança, o sistema deve possuir algum tipo de autenticação (login e logout utilizando passport.js, auth0, firebase auth, manualmente na base de dados ou qualquer outro tipo de autenticação);
 -  [ ] A tela inicial deverá conter todas as listas criadas pelo usuário, onde será possível inserir, editar o nome e remover as listas;
 -  [ ] Ao clicar em uma das listas, o usuário será levado a uma outra página com as tarefas específicas daquela lista. Nessa tela, o usuário deverá ser capaz de executar as seguintes ações:
-   -  [ ] Adicionar, editar e remover uma tarefa;
+   -  [x] Adicionar, editar e remover uma tarefa;
    -  [ ] Marcar e desmarcar uma tarefa como concluída.
 
 #### Importante

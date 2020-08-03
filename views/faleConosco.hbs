@@ -17,6 +17,23 @@
 
 		<!-- Template Main CSS File -->
 		<link href="../stylesheets/style.css" rel="stylesheet" />
+
+		<!--TODO-->
+		<link
+			rel="stylesheet"
+			href="/public/stylesheets/style.css"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+			crossorigin="anonymous"
+		/>
 	</head>
 
 	<body>
@@ -40,18 +57,16 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
 				>×</a
 			>
-			<a href="#">Início</a>
-			<a href="#about">Sobre</a>
-			<a href="#">Listas</a>
-			<a href="#">Tarefas</a>
-			<a href="/ListatodoComment" method="post" target="_blank"
-				>Comentários</a
+			<a href="/tasks">Início</a>
+			<a href="/tasks#tasks">Listas</a>
+			<a href="/tasks#tasks">Tarefas</a>
+			<a href="/tasks#about">Sobre</a>
+			<a href="/ListatodoComment">Comentários</a>
+			<a href="/tasks#contact">Contatos</a>
+			<a
+				href="https://nodejs-trabalhofinal-pwn.herokuapp.com:3001/faleConosco"
+				>Fale Conosco</a
 			>
-			<a href="#contact">Contatos</a>
-			<!--  
-    <a href="/login">Fazer o Login</a> 
-  -->
-			<a href="/faleConosco">Fale Conosco</a>
 			<a href="/logout">Logout</a>
 		</div>
 		<center>
@@ -126,10 +141,12 @@
 		</center>
 		<script src="/socket.io/socket.io.js"></script>
 		<!--
-    Declarando um instância SOCKET.IO na constante socket no localhost:3001 (Servidor).
+    Declarando um instância SOCKET.IO na constante socket no https://nodejs-trabalhofinal-pwn.herokuapp.com:3001 (Servidor).
 -->
 		<script type="text/javascript">
-			const socket = io('http://localhost:3001');
+			const socket = io(
+				'https://nodejs-trabalhofinal-pwn.herokuapp.com:3001'
+			);
 			//
 			// Recebendo a Mensagem do Cliente (String).
 			//

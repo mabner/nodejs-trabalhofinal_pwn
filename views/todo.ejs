@@ -5,8 +5,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta content="" name="description" />
-	<meta content="" name="keywords" />
 	<!-- W3Schools Style -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
@@ -16,25 +14,8 @@
 		rel="stylesheet"
 	/>
 
-	<!-- Vendor CSS Files -->
-	<link
-		href="../assets/vendor/bootstrap/css/bootstrap.min.css"
-		rel="stylesheet"
-	/>
-	<link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-	<link
-		href="../assets/vendor/boxicons/css/boxicons.min.css"
-		rel="stylesheet"
-	/>
-	<link href="../assets/vendor/venobox/venobox.css" rel="stylesheet" />
-	<link
-		href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css"
-		rel="stylesheet"
-	/>
-	<link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
-
 	<!-- Template Main CSS File -->
-	<link href="../assets/css/style.css" rel="stylesheet" />
+	<link href="../stylesheets/style.css" rel="stylesheet" />
 
 	<!--TODO-->
 	<link
@@ -93,23 +74,24 @@
 		</div>
 	</div>
 
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-			>&times;</a
-		>
-		<a href="#">Início</a>
-		<a href="#">Listas</a>
-		<a href="#">Tarefas</a>
-		<a href="#about">Sobre</a>
+	<div id="mySidenav" class="sidenav" style="width: 220px;">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="/tasks">Início</a>
+		<a href="/tasks#tasks">Listas</a>
+		<a href="/tasks#tasks">Tarefas</a>
+		<a href="/tasks#about">Sobre</a>
 		<a href="/ListatodoComment">Comentários</a>
-		<a href="#contact">Contatos</a>
+		<a href="/tasks#contact">Contatos</a>
+		<a href="https://nodejs-trabalhofinal-pwn.herokuapp.com:3001/faleConosco"
+			>Fale Conosco</a
+		>
 		<a href="/logout">Logout</a>
 	</div>
 
 	<!--TODO-->
 	<div style="margin-left: 22.5%;">
 		<div class="todo-container">
-			<h2><strong>Tarefas</strong></h2>
+			<h2 id="tasks"><strong>Tarefas</strong></h2>
 			<div class="todo">
 				<form action="/" method="POST" class="todo-header">
 					<input type="text" name="content" />
